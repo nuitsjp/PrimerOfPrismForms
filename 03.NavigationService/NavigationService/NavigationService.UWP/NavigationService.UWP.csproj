@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{806C84B3-1EF3-4BD3-8AF5-A157DFFAA53A}</ProjectGuid>
+    <ProjectGuid>{D4706E1E-6448-4DE1-91E8-15174D7149FD}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NavigationService.UWP</RootNamespace>

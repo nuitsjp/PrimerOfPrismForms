@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="fb31afe7-2325-413c-a3a1-1f7a043ee66a"
+    Name="4a8979e8-51b9-498c-a302-d5b9d533d709"
     Publisher="CN=nuits.jp"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="fb31afe7-2325-413c-a3a1-1f7a043ee66a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="4a8979e8-51b9-498c-a302-d5b9d533d709" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>NavigationService.UWP</DisplayName>
