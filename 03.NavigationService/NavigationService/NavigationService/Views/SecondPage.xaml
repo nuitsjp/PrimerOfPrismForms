@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="NavigationService.Views.SecondPage">
-
+             x:Class="NavigationService.Views.SecondPage"
+             Title="SecondPage">
+  <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+    <Label Text="Second Page."/>
+    <Button Text="Go Back." Command="{Binding GoBackCommand}"/>
+  </StackLayout>
 </ContentPage>

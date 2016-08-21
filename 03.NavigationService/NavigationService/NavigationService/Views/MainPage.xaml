@@ -7,5 +7,6 @@
              Title="MainPage">
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
     <Label Text="{Binding Title}" />
+    <Button Text="Navigate Second Page." Command="{Binding NavigateSecondCommand}"/>
   </StackLayout>
 </ContentPage>
