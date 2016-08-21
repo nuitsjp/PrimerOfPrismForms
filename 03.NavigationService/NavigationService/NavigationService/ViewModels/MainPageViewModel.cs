@@ -20,12 +20,18 @@ namespace NavigationService.ViewModels
         private readonly INavigationService _navigationService;
         public ICommand NavigateSecondCommand { get; }
 
+        public ICommand NavigateTabbedPageCommand { get; }
+
         public MainPageViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
             NavigateSecondCommand = new DelegateCommand(() =>
             {
                 _navigationService.NavigateAsync("SecondPage");
+            });
+            NavigateTabbedPageCommand =  new DelegateCommand(() =>
+            {
+                _navigationService.NavigateAsync("TabbedPageDemoPage");
             });
         }
 
