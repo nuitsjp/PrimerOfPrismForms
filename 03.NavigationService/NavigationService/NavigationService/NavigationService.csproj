@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8D2C311F-FDA1-4A45-962E-695B71FE60E9}</ProjectGuid>
+    <ProjectGuid>{B8911C40-5867-4634-8AAA-F93F32CC1FB2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NavigationService</RootNamespace>
@@ -38,12 +38,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\SecondPageViewModel.cs" />
-    <Compile Include="ViewModels\TabbedPageDemoPageViewModel.cs" />
     <Compile Include="Views\SecondPage.xaml.cs">
       <DependentUpon>SecondPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\TabbedPageDemoPage .xaml.cs">
-      <DependentUpon>TabbedPageDemoPage .xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -103,12 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\SecondPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\TabbedPageDemoPage .xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

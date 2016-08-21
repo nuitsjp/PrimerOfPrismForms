@@ -4,8 +4,5 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="NavigationService.Views.SecondPage">
-  <Grid HorizontalOptions="Center" VerticalOptions="Center">
-    <Button Text="GoBack" Command="{Binding GoBackCommand}"/>
-  </Grid>
 
 </ContentPage>

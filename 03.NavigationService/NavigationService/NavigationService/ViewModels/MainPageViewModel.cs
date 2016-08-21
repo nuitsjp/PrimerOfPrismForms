@@ -4,7 +4,6 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Input;
 
 namespace NavigationService.ViewModels
 {
@@ -17,22 +16,9 @@ namespace NavigationService.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        private readonly INavigationService _navigationService;
-        public ICommand NavigateSecondCommand { get; }
-
-        public ICommand NavigateTabbedPageCommand { get; }
-
-        public MainPageViewModel(INavigationService navigationService)
+        public MainPageViewModel()
         {
-            _navigationService = navigationService;
-            NavigateSecondCommand = new DelegateCommand(() =>
-            {
-                _navigationService.NavigateAsync("SecondPage");
-            });
-            NavigateTabbedPageCommand =  new DelegateCommand(() =>
-            {
-                _navigationService.NavigateAsync("TabbedPageDemoPage");
-            });
+
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
