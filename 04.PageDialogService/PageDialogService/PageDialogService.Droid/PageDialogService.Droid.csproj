@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7F8274B7-A870-4375-A6E5-BCE4CBFC6762}</ProjectGuid>
+    <ProjectGuid>{D4A1408A-31B9-422A-B3E8-76535689AA93}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelloPrism.Droid</RootNamespace>
-    <AssemblyName>HelloPrism.Droid</AssemblyName>
+    <RootNamespace>PageDialogService.Droid</RootNamespace>
+    <AssemblyName>PageDialogService.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
@@ -154,8 +154,8 @@
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HelloPrism\HelloPrism.csproj">
-      <Name>HelloPrism</Name>
+    <ProjectReference Include="..\PageDialogService\PageDialogService.csproj">
+      <Name>PageDialogService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

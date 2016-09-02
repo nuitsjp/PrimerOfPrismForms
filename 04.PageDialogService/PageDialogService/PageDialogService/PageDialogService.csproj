@@ -5,11 +5,11 @@
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C1756FAD-88CD-4531-98A4-C9FA4AE293DE}</ProjectGuid>
+    <ProjectGuid>{7BC81432-B382-4DFD-8327-9FDA93ECFA22}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelloPrism</RootNamespace>
-    <AssemblyName>HelloPrism</AssemblyName>
+    <RootNamespace>PageDialogService</RootNamespace>
+    <AssemblyName>PageDialogService</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>

@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FBF1B005-EAA2-49CD-8071-A0FB9C577B57}</ProjectGuid>
+    <ProjectGuid>{889D918E-C5A0-41D7-BC27-63D900A18376}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HelloPrism.iOS</RootNamespace>
+    <RootNamespace>PageDialogService.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>HelloPrismiOS</AssemblyName>
+    <AssemblyName>PageDialogServiceiOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -98,8 +98,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HelloPrism\HelloPrism.csproj">
-      <Name>HelloPrism</Name>
+    <ProjectReference Include="..\PageDialogService\PageDialogService.csproj">
+      <Name>PageDialogService</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
