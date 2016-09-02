@@ -6,11 +6,7 @@
             prism:ViewModelLocator.AutowireViewModel="True"
             x:Class="TabbedPageNavigation.Views.PrismTabbedPage">
   <TabbedPage.Children>
-    <ContentPage Title="Tab 1">
-      <Label Text="Tab Page 1"
-             VerticalOptions="Center"
-             HorizontalTextAlignment="Center"/>
-    </ContentPage>
+    <views:PrismContentPage3 Title="Tab 1"/>
     <NavigationPage Title="Tab 2">
       <x:Arguments>
         <views:PrismContentPage1/>

@@ -11,7 +11,7 @@ namespace TabbedPageNavigation
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("PrismTabbedPage");
+            NavigationService.NavigateAsync("MainPage");
         }
 
         protected override void RegisterTypes()

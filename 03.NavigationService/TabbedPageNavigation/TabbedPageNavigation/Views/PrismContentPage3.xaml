@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="TabbedPageNavigation.Views.MainPage"
-             Title="MainPage">
-  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="MainPage" />
-    <Button Text="Go to TabbedPage" Command="{Binding GoToTabbedPageCommand}"/>
+             x:Class="TabbedPageNavigation.Views.PrismContentPage3">
+  <StackLayout Orientation="Vertical"
+           VerticalOptions="Center"
+           HorizontalOptions="Center">
+    <Label Text="PrismContentPage3"/>
+    <Button Text="Go Back" Command="{Binding GoBackCommand}"/>
   </StackLayout>
+
 </ContentPage>
