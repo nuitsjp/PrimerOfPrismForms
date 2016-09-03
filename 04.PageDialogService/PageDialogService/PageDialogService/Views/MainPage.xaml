@@ -7,5 +7,7 @@
              Title="MainPage">
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
     <Label Text="{Binding Title}" />
+    <Button Text="Display Dialog" Command="{Binding DisplayDialogCommand}"/>
+    <Button Text="Display ActionSheet" Command="{Binding DisplayActionSheetCommand}"/>
   </StackLayout>
 </ContentPage>
