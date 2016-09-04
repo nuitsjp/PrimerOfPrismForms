@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using Windows.Media.SpeechSynthesis;
 using Windows.UI.Xaml.Controls;
 using TextSpeaker.Model;
@@ -13,12 +12,13 @@ namespace TextSpeaker.UWP.Model
     {
         public async void Speak(string message)
         {
-            var mediaElement = new MediaElement();
-            var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
-            var stream = await synth.SynthesizeTextToStreamAsync(message);
-
-            mediaElement.SetSource(stream, stream.ContentType);
-            mediaElement.Play();
+            using (var synth = new SpeechSynthesizer())
+            using (var stream = await synth.SynthesizeTextToStreamAsync(message))
+            {
+                var mediaElement = new MediaElement();
+                mediaElement.SetSource(stream, stream.ContentType);
+                mediaElement.Play();
+            }
         }
     }
 }
