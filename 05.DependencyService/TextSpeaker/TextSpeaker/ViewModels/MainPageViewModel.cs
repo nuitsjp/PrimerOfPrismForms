@@ -23,7 +23,7 @@ namespace TextSpeaker.ViewModels
         {
             SpeachCommand = new DelegateCommand(() =>
             {
-                DependencyService.Get<ITextToSpeechService>().Speak(Title);
+                DependencyService.Get<ITextToSpeech>().Speak(Title);
             });
         }
 
