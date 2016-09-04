@@ -5,7 +5,8 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="TextSpeaker.Views.MainPage"
              Title="MainPage">
-  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="{Binding Title}" />
+  <StackLayout HorizontalOptions="Fill" VerticalOptions="Center" Margin="10">
+    <Entry Text="{Binding Title}" HorizontalOptions="Fill"/>
+    <Button Text="Speach" Command="{Binding SpeachCommand}"/>
   </StackLayout>
 </ContentPage>

@@ -4,6 +4,9 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Input;
+using TextSpeaker.Model;
+using Xamarin.Forms;
 
 namespace TextSpeaker.ViewModels
 {
@@ -15,10 +18,13 @@ namespace TextSpeaker.ViewModels
             get { return _title; }
             set { SetProperty(ref _title, value); }
         }
-
+        public ICommand SpeachCommand { get; }
         public MainPageViewModel()
         {
-
+            SpeachCommand = new DelegateCommand(() =>
+            {
+                DependencyService.Get<ITextToSpeechService>().Speak(Title);
+            });
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
