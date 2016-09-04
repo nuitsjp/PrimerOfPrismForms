@@ -27,6 +27,7 @@ namespace PageDialogService.ViewModels
             _pageDialogService = pageDialogService;
             DisplayDialogCommand = new DelegateCommand(async () =>
             {
+                //await _pageDialogService.DisplayAlertAsync("Title", "Hello, Dialog.", "OK");
                 var result = await _pageDialogService.DisplayAlertAsync("Title", "何れかを選んでください。", "はい", "いいえ");
                 await _pageDialogService.DisplayAlertAsync("Title", $"選択結果：{result}", "OK");
             });
@@ -34,7 +35,11 @@ namespace PageDialogService.ViewModels
             {
                 //var result = await _pageDialogService.DisplayActionSheetAsync("共有先を選択してください。", "キャンセル", "削除", "Twitter", "LINE", "Facebook");
                 //await _pageDialogService.DisplayAlertAsync("Title", $"選択結果：{result}", "OK");
-                var cancelButton = ActionSheetButton.CreateCancelButton("キャンセル", new DelegateCommand(async () => await DisplayAlert("キャンセル")));
+                var cancelButton = 
+                    ActionSheetButton.CreateCancelButton(
+                        "キャンセル", 
+                        new DelegateCommand(
+                            async () => await DisplayAlert("キャンセル")));
                 var deleteButton = ActionSheetButton.CreateDestroyButton("削除", new DelegateCommand(async () => await DisplayAlert("削除")));
                 var twitterButton = ActionSheetButton.CreateButton("Twitter", new DelegateCommand(async () => await DisplayAlert("Twitter")));
                 var lineButton = ActionSheetButton.CreateButton("LINE", new DelegateCommand(async () => await DisplayAlert("LINE")));

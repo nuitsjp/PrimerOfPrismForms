@@ -3,11 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="PageDialogService.Views.MainPage"
+             x:Class="NsDeepDive.Views.MainPage"
              Title="MainPage">
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="{Binding Title}" />
-    <Button Text="Display Dialog" Command="{Binding DisplayDialogCommand}"/>
-    <Button Text="Display ActionSheet" Command="{Binding DisplayActionSheetCommand}"/> 
+    <Switch IsToggled="{Binding CanNavigateSecond}" HorizontalOptions="Center"/>
+    <Button Text="Navigate Second" Command="{Binding NavigateSocondCommand}"/>
   </StackLayout>
 </ContentPage>
