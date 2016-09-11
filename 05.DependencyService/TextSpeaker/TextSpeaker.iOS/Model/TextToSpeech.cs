@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AVFoundation;
+﻿using AVFoundation;
 using TextSpeaker.iOS.Model;
 using TextSpeaker.Model;
 using Xamarin.Forms;
