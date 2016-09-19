@@ -5,8 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
+using Prism.Services;
 using TextSpeaker.Model;
-using Xamarin.Forms;
+using DependencyService = Xamarin.Forms.DependencyService;
 
 namespace TextSpeaker.ViewModels
 {
@@ -19,11 +20,17 @@ namespace TextSpeaker.ViewModels
             set { SetProperty(ref _title, value); }
         }
         public ICommand SpeachCommand { get; }
-        public MainPageViewModel()
+        //private readonly IDependencyService _dependencyService;
+        private readonly ITextToSpeech _textToSpeech;
+        //public MainPageViewModel(IDependencyService dependencyService)
+        public MainPageViewModel(ITextToSpeech textToSpeech)
         {
+            _textToSpeech = textToSpeech;
             SpeachCommand = new DelegateCommand(() =>
             {
-                DependencyService.Get<ITextToSpeech>().Speak(Title);
+                //DependencyService.Get<ITextToSpeech>().Speak(Title);
+                //_dependencyService.Get<ITextToSpeech>().Speak(Title);
+                _textToSpeech.Speak(Title);
             });
         }
 

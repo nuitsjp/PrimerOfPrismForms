@@ -13,7 +13,7 @@ using Android.Widget;
 using TextSpeaker.Model;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(TextToSpeech))]
+[assembly: Dependency(typeof(TextSpeaker.Droid.Model.TextToSpeech))]
 namespace TextSpeaker.Droid.Model
 {
     public class TextToSpeech : ITextToSpeech, Android.Speech.Tts.TextToSpeech.IOnInitListener
