@@ -6,11 +6,12 @@
              x:Class="CommandSample.Views.MainPage"
              Title="MainPage">
   <StackLayout HorizontalOptions="Fill" VerticalOptions="Center">
+    <Label Text="{Binding Title}" />
     <Entry Text="{Binding FirstName}" />
     <Entry Text="{Binding FamilyName}" />
     <Button Text="Name Command" Command="{Binding NameCommand}"/>
     <Switch IsToggled="{Binding IsToggled}" HorizontalOptions="Center"/>
     <Button Text="Toggle Command" Command="{Binding ToggleCommand}"/>
-    <Button Text="Composit Command" Command="{Binding CompositCommand}"/>
+    <Button Text="Composite Command" Command="{Binding CompositeCommand}"/>
   </StackLayout>
 </ContentPage>

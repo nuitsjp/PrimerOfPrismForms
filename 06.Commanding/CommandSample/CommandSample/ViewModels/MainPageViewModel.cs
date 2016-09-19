@@ -10,6 +10,12 @@ namespace CommandSample.ViewModels
 {
     public class MainPageViewModel : BindableBase, INavigationAware
     {
+        private string _title;
+        public string Title
+        {
+            get { return _title; }
+            set { SetProperty(ref _title, value); }
+        }
         private string _firstName;
         public string FirstName
         {
@@ -34,21 +40,21 @@ namespace CommandSample.ViewModels
         }
         public ICommand ToggleCommand { get; }
 
-        public CompositeCommand CompositCommand { get; }
+        public CompositeCommand CompositeCommand { get; }
 
         public MainPageViewModel()
         {
             // bool型以外のプロパティの変更を監視したい場合
-            NameCommand = 
+            NameCommand =
                 new DelegateCommand(() => { }, CanExecuteNameCommand)
                     .ObservesProperty(() => FirstName)
                     .ObservesProperty(() => FamilyName);
             // 監視対象のプロパティの型がboolの場合
             ToggleCommand = new DelegateCommand(() => { }).ObservesCanExecute(_=> IsToggled);
             // 複合コマンド
-            CompositCommand = new CompositeCommand();
-            CompositCommand.RegisterCommand(NameCommand);
-            CompositCommand.RegisterCommand(ToggleCommand);
+            CompositeCommand = new CompositeCommand();
+            CompositeCommand.RegisterCommand(NameCommand);
+            CompositeCommand.RegisterCommand(ToggleCommand);
         }
 
         private bool CanExecuteNameCommand()
@@ -64,6 +70,8 @@ namespace CommandSample.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
+            if (parameters.ContainsKey("title"))
+                Title = (string)parameters["title"] + " and Prism";
         }
     }
 }
