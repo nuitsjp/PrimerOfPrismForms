@@ -8,7 +8,7 @@ namespace NavigationSample
     /// <summary>
     /// アタッチしているオブジェクトで特定のイベントを購読し、イベント発行時にバインドされたコマンドを実行するビヘイビア
     /// </summary>
-    public class NotifyAppearingBehavior : BindableBehavior<Page>
+    public class NotifyNavigationBehavior : BindableBehavior<Page>
     {
         /// <summary>
         /// アタッチ時に、対象のイベントの購読設定を行う

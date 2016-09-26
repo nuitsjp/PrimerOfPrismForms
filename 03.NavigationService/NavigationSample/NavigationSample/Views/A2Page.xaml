@@ -7,7 +7,7 @@
              x:Class="NavigationSample.Views.A2Page"
              Title="A2Page">
   <ContentPage.Behaviors>
-    <navigationSample:NotifyAppearingBehavior/>
+    <navigationSample:NotifyNavigationBehavior/>
   </ContentPage.Behaviors>
   <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
     <Label Text="A2Page"/>

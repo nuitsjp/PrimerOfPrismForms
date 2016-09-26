@@ -38,7 +38,7 @@
     <Compile Include="BindableBehavior.cs" />
     <Compile Include="IAppearingAware.cs" />
     <Compile Include="IDisappearingAware.cs" />
-    <Compile Include="NotifyAppearingBehavior.cs" />
+    <Compile Include="NotifyNavigationBehavior.cs" />
     <Compile Include="IPoppedAware.cs" />
     <Compile Include="IPoppedToRootAware.cs" />
     <Compile Include="IPushedAware.cs" />
