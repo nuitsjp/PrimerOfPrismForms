@@ -5,9 +5,6 @@ using Xamarin.Forms;
 
 namespace NavigationSample
 {
-    /// <summary>
-    /// アタッチしているオブジェクトで特定のイベントを購読し、イベント発行時にバインドされたコマンドを実行するビヘイビア
-    /// </summary>
     public class NotifyNavigationBehavior : BindableBehavior<Page>
     {
         /// <summary>
@@ -34,11 +31,15 @@ namespace NavigationSample
 
         private void OnAppearing(object sender, EventArgs eventArgs)
         {
+            // アタッチしているViewのBindingContextにバインドされているViewModelが
+            // IAppearingAwareを実装していた場合にイベントを通知する
             (AssociatedObject.BindingContext as IAppearingAware)?.OnAppearing();
         }
 
         private void OnDisappearing(object sender, EventArgs eventArgs)
         {
+            // アタッチしているViewのBindingContextにバインドされているViewModelが
+            // IDisappearingAwareを実装していた場合にイベントを通知する
             (AssociatedObject.BindingContext as IDisappearingAware)?.OnDisappearing();
         }
     }
