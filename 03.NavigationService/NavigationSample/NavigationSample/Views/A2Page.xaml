@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:navigationSample="clr-namespace:NavigationSample;assembly=NavigationSample"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="NavigationSample.Views.A2Page"
+             Title="A2Page">
+  <ContentPage.Behaviors>
+    <navigationSample:NotifyAppearingBehavior/>
+  </ContentPage.Behaviors>
+  <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+    <Label Text="A2Page"/>
+    <Button Text="Go Next" Command="{Binding GoNextCommand}"/>
+    <Button Text="Go Back" Command="{Binding GoBackCommand}"/>
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:navigationSample="clr-namespace:NavigationSample;assembly=NavigationSample"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="NavigationSample.Views.A3Page"
+             Title="A3Page">
+  <ContentPage.Behaviors>
+    <navigationSample:NotifyAppearingBehavior/>
+  </ContentPage.Behaviors>
+  <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+    <Label Text="A3Page"/>
+    <Button Text="Go Back" Clicked="GoBackButton_OnClicked"/>
+    <Button Text="Go Back to Root" Clicked="GoBackToRootButton_OnClicked"/>
+    <Button Text="Navigate Absolute" Command="{Binding NavigateAbsoluteCommand}"/>
+  </StackLayout>
+</ContentPage>
