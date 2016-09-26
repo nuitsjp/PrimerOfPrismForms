@@ -22,7 +22,7 @@ namespace NavigationSample.ViewModels
 
         public MainPageViewModel(INavigationService navigationService)
         {
-            NavigateNavigationPageCommand = new DelegateCommand(() => navigationService.NavigateAsync("MyNavigationPage/A1Page"));
+            NavigateNavigationPageCommand = new DelegateCommand(() => navigationService.NavigateAsync("NotifyNavigationPage/A1Page"));
             NavigateToNextPageCommand = new DelegateCommand(() => navigationService.NavigateAsync("A1Page"));
         }
 

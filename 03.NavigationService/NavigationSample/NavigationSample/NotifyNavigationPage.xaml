@@ -3,9 +3,9 @@
                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                 xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
                 prism:ViewModelLocator.AutowireViewModel="True"
-                x:Class="NavigationSample.Views.MyNavigationPage"
-                Pushed="MyNavigationPage_OnPushed"
-                Popped="MyNavigationPage_OnPopped"
-                PoppedToRoot="MyNavigationPage_OnPoppedToRoot">
+                x:Class="NavigationSample.NotifyNavigationPage"
+                Pushed="OnPushed"
+                Popped="OnPopped"
+                PoppedToRoot="OnPoppedToRoot">
 
 </NavigationPage>

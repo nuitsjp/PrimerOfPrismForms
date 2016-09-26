@@ -56,8 +56,8 @@
     <Compile Include="Views\A3Page.xaml.cs">
       <DependentUpon>A3Page.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MyNavigationPage.xaml.cs">
-      <DependentUpon>MyNavigationPage.xaml</DependentUpon>
+    <Compile Include="NotifyNavigationPage.xaml.cs">
+      <DependentUpon>NotifyNavigationPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -116,7 +116,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\MyNavigationPage.xaml">
+    <EmbeddedResource Include="NotifyNavigationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

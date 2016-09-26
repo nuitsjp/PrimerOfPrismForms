@@ -17,7 +17,7 @@ namespace NavigationSample
         protected override void RegisterTypes()
         {
             Container.RegisterTypeForNavigation<MainPage>();
-            Container.RegisterTypeForNavigation<MyNavigationPage>();
+            Container.RegisterTypeForNavigation<NotifyNavigationPage>();
             Container.RegisterTypeForNavigation<A1Page>();
             Container.RegisterTypeForNavigation<A2Page>();
             Container.RegisterTypeForNavigation<A3Page>();
