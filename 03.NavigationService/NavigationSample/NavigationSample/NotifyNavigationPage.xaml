@@ -7,5 +7,4 @@
                 Pushed="OnPushed"
                 Popped="OnPopped"
                 PoppedToRoot="OnPoppedToRoot">
-
 </NavigationPage>

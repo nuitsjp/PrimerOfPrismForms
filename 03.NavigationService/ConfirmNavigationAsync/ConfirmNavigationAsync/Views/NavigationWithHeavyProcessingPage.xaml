@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="ConfirmNavigationAsync.Views.NavigationWithHeavyProcessingPage"
+             Title="Navigation with Heavy Processing">
+  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <Button Text="Navigate" Command="{Binding NavigateCommand}"/>
+    <ActivityIndicator
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   IsVisible="{Binding IsProcessing}"
+                   IsEnabled="True"
+                   IsRunning="{Binding IsProcessing}"/>
+  </StackLayout>
+</ContentPage>
