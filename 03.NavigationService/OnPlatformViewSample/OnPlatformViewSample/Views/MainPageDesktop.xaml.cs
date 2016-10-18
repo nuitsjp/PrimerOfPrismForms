@@ -2,9 +2,9 @@
 
 namespace OnPlatformViewSample.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPageDesktop : ContentPage
     {
-        public MainPage()
+        public MainPageDesktop()
         {
             InitializeComponent();
         }

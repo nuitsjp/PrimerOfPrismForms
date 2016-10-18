@@ -17,10 +17,16 @@ namespace OnPlatformViewSample
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<MainPage>();
-            Container.RegisterTypeForNavigationOnPlatform<MainPage, MainPageViewModel>(
+            Container.RegisterTypeForNavigationOnPlatform<MainPage_iOS, MainPageViewModel>(
+                "MainPage",
                 iOSView: typeof(MainPage_iOS),
-                otherView: typeof(MainPage));
+                androidView: typeof(MainPage_Android),
+                windowsView: typeof(MainPage_UWP));
+            //Container.RegisterTypeForNavigationOnIdiom<MainPagePhone, MainPageViewModel>(
+            //    "MainPage",
+            //    phoneView: typeof(MainPagePhone),
+            //    tabletView: typeof(MainPageTablet),
+            //    desktopView: typeof(MainPageDesktop));
         }
     }
 }
