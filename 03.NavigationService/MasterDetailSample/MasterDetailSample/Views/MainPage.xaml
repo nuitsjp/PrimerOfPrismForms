@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="MasterDetailSample.Views.MainPage">
+  <MasterDetailPage.Master>
+    <ContentPage Title="Master Page">
+      <StackLayout HorizontalOptions="Start" VerticalOptions="Start">
+        <Label Text="Master Page"/>
+      </StackLayout>
+    </ContentPage>
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <ContentPage Title="Detail Page">
+          <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Detail Page"/>
+          </StackLayout>
+        </ContentPage>
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>
