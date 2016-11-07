@@ -21,9 +21,9 @@ namespace ViewModelFirstNavigation.ViewModels
 
         private void NavigateNext()
         {
-            var oarameters = new NavigationParameters();
-            oarameters["Message"] = "Hello, Next Page!";
-            _navigationService.NavigateAsync<NextPageViewModel>(oarameters);
+            var parameters = new NavigationParameters();
+            parameters["Message"] = "Hello, Next Page!";
+            _navigationService.NavigateAsync<NextPageViewModel>(parameters);
         }
 
         private readonly INavigationService _navigationService;
