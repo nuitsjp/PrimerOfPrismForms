@@ -15,8 +15,10 @@ namespace TypeSafeNavigation.ViewModels
             get { return _title; }
             set { SetProperty(ref _title, value); }
         }
+
         public DelegateCommand NavigateToSecondPageCommand => 
-            new DelegateCommand(() => _navigationService.NavigateAsync("SecondPage"));
+            new DelegateCommand(() => _navigationService.NavigateAsync(NavigateDestination.SecondPage));
+
         private readonly INavigationService _navigationService;
         public MainPageViewModel(INavigationService navigationService)
         {

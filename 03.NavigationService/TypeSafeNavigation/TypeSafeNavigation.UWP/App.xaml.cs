@@ -81,7 +81,7 @@ namespace TypeSafeNavigation.UWP
         }
 
         /// <summary>
-        /// Invoked when Navigation to a certain page fails
+        /// Invoked when NavigateDestination to a certain page fails
         /// </summary>
         /// <param name="sender">The Frame which failed navigation</param>
         /// <param name="e">Details about the navigation failure</param>

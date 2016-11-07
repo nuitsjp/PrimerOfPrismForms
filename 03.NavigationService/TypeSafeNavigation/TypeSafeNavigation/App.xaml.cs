@@ -1,4 +1,7 @@
-﻿using Prism.Unity;
+﻿using System.Linq.Expressions;
+using Prism.Navigation;
+using Prism.Unity;
+using TypeSafeNavigation.ViewModels;
 using TypeSafeNavigation.Views;
 using Xamarin.Forms;
 
@@ -12,14 +15,16 @@ namespace TypeSafeNavigation
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("NavigationPage/MainPage?title=Hello%20from%20Xamarin.Forms");
+            var navigation = new Navigation(NavigateDestination.MainPage);
+            navigation["title"] = "Hello from Xamarin.Forms";
+            NavigationService.NavigateAsync(new Navigation(NavigateDestination.NavigationPage), navigation);
         }
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<NavigationPage>();
-            Container.RegisterTypeForNavigation<MainPage>();
-            Container.RegisterTypeForNavigation<SecondPage>();
+            Container.RegisterTypeForNavigation<NavigationPage>(NavigateDestination.NavigationPage);
+            Container.RegisterTypeForNavigation<MainPage>(NavigateDestination.MainPage);
+            Container.RegisterTypeForNavigation<SecondPage>(NavigateDestination.SecondPage);
         }
     }
 }
