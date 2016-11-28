@@ -15,9 +15,9 @@ namespace TypeSafeNavigation
         {
             InitializeComponent();
 
-            var navigation = new Navigation(NavigateDestination.MainPage);
-            navigation["title"] = "Hello from Xamarin.Forms";
-            NavigationService.NavigateAsync(new Navigation(NavigateDestination.NavigationPage), navigation);
+            NavigationService.NavigateAsync(
+                new Navigation(NavigateDestination.NavigationPage), 
+                new Navigation(NavigateDestination.MainPage, "title=Hello%20from%20Xamarin.Forms"));
         }
 
         protected override void RegisterTypes()

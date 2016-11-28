@@ -35,10 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ViewModels\Navigation.cs" />
-    <Compile Include="ViewModels\NavigationServiceExtensions.cs" />
+    <Compile Include="Navigation.cs" />
+    <Compile Include="NavigationExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnityContainerExtensions.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,7 +54,7 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="ViewModels\NavigateDestination.cs" />
+    <Compile Include="NavigateDestination.cs" />
     <Compile Include="Views\SecondPage.xaml.cs">
       <DependentUpon>SecondPage.xaml</DependentUpon>
     </Compile>
