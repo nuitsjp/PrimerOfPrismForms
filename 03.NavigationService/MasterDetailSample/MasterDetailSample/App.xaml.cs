@@ -1,5 +1,6 @@
 ﻿using Prism.Unity;
 using MasterDetailSample.Views;
+using Xamarin.Forms;
 
 namespace MasterDetailSample
 {
@@ -11,12 +12,15 @@ namespace MasterDetailSample
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms", useModalNavigation:true);
+            NavigationService.NavigateAsync("MainPage", useModalNavigation:true);
         }
 
         protected override void RegisterTypes()
         {
             Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<NavigationPage>();
+            Container.RegisterTypeForNavigation<DetailA1Page>();
+            Container.RegisterTypeForNavigation<DetailA2Page>();
         }
     }
 }
