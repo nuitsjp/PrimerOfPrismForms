@@ -1,5 +1,6 @@
 ﻿using Prism.Unity;
 using TabbedPageNavigation.Views;
+using Xamarin.Forms;
 
 namespace TabbedPageNavigation
 {
@@ -17,6 +18,7 @@ namespace TabbedPageNavigation
         protected override void RegisterTypes()
         {
             Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<PrismTabbedPage>();
             Container.RegisterTypeForNavigation<PrismContentPage1>();
             Container.RegisterTypeForNavigation<PrismContentPage2>();

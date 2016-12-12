@@ -8,5 +8,6 @@
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
     <Label Text="MainPage" />
     <Button Text="Go to TabbedPage" Command="{Binding GoToTabbedPageCommand}"/>
+    <Button Text="Deep Link" Command="{Binding DeepLinkCommand}"/>
   </StackLayout>
 </ContentPage>

@@ -20,6 +20,7 @@ namespace TabbedPageNavigation.ViewModels
         private readonly INavigationService _navigationService;
 
         public ICommand GoToTabbedPageCommand { get; }
+        public ICommand DeepLinkCommand { get; }
 
         public MainPageViewModel(INavigationService navigationService)
         {
@@ -27,6 +28,11 @@ namespace TabbedPageNavigation.ViewModels
             GoToTabbedPageCommand = new DelegateCommand(() =>
             {
                 _navigationService.NavigateAsync("PrismTabbedPage");
+            });
+
+            DeepLinkCommand = new DelegateCommand(() =>
+            {
+                _navigationService.NavigateAsync("PrismTabbedPage/NavigationPage/PrismContentPage1/PrismContentPage2");
             });
         }
 
