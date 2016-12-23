@@ -1,5 +1,6 @@
 ﻿using Prism.Unity;
 using NavigationEventSequence.Views;
+using Xamarin.Forms;
 
 namespace NavigationEventSequence
 {
@@ -11,12 +12,16 @@ namespace NavigationEventSequence
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms");
+            NavigationService.NavigateAsync("MyNavigationPage/ViewA");
         }
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<NavigationPage>();
+            Container.RegisterTypeForNavigation<ViewA>();
+            Container.RegisterTypeForNavigation<ViewB>();
+            Container.RegisterTypeForNavigation<ViewC>();
+            Container.RegisterTypeForNavigation<MyNavigationPage>();
         }
     }
 }
