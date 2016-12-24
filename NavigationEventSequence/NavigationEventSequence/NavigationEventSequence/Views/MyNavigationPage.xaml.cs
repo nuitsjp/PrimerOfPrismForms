@@ -12,5 +12,13 @@ namespace NavigationEventSequence.Views
             Appearing += (sender, args) => Debug.WriteLine("MyNavigationPage#Appearing");
             Disappearing += (sender, args) => Debug.WriteLine("MyNavigationPage#Disappearing");
         }
+
+        public MyNavigationPage(Page page) : base(page)
+        {
+            Debug.WriteLine("MyNavigationPage#Constructor(Page)");
+            InitializeComponent();
+            Appearing += (sender, args) => Debug.WriteLine("MyNavigationPage#Appearing");
+            Disappearing += (sender, args) => Debug.WriteLine("MyNavigationPage#Disappearing");
+        }
     }
 }
