@@ -12,8 +12,8 @@ namespace NavigationEventSequence
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MyNavigationPage/ViewA");
-            //NavigationService.NavigateAsync("MyTabbedPage");
+            //NavigationService.NavigateAsync("MyNavigationPage/ViewA");
+            NavigationService.NavigateAsync("MyTabbedPage/MyNavigationPage/ViewC");
         }
 
         protected override void RegisterTypes()
@@ -24,6 +24,7 @@ namespace NavigationEventSequence
             Container.RegisterTypeForNavigation<ViewC>();
             Container.RegisterTypeForNavigation<MyNavigationPage>();
             Container.RegisterTypeForNavigation<MyTabbedPage>();
+            Container.RegisterTypeForNavigation<MyTabNavigationPage>();
         }
     }
 }

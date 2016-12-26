@@ -9,6 +9,6 @@
     <Label Text="View A"/>
     <Button Text="Navigation ViewB" Command="{Binding NavigationCommand}" CommandParameter="ViewB"/>
     <Button Text="Navigation ViewB/ViewC" Command="{Binding NavigationCommand}" CommandParameter="ViewB/ViewC"/>
-    <Button Text="Navigation MyTabbedPage" Command="{Binding NavigationCommand}" CommandParameter="/MyTabbedPage"/>
+    <Button Text="Navigation /MyTabbedPage/MyNavigationPage/ViewC" Command="{Binding NavigationCommand}" CommandParameter="/MyTabbedPage/MyNavigationPage/ViewC"/>
   </StackLayout>
 </ContentPage>

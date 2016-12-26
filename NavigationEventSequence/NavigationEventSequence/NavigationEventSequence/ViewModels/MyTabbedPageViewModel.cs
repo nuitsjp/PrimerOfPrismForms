@@ -9,7 +9,7 @@ using Prism.Navigation;
 
 namespace NavigationEventSequence.ViewModels
 {
-    public class MyTabbedPageViewModel : BindableBase
+    public class MyTabbedPageViewModel : BindableBase, INavigationAware, IConfirmNavigation, IConfirmNavigationAsync, IDestructible
     {
         public MyTabbedPageViewModel()
         {

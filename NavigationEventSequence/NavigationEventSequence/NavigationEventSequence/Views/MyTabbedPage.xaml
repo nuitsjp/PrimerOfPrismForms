@@ -6,15 +6,8 @@
             prism:ViewModelLocator.AutowireViewModel="True"
             x:Class="NavigationEventSequence.Views.MyTabbedPage">
   <TabbedPage.Children>
-    <views:MyNavigationPage Title="TabB">
-      <x:Arguments>
-        <views:ViewB/>
-      </x:Arguments>
-    </views:MyNavigationPage>
+    <views:ViewB/>
     <views:MyNavigationPage Title="TabC">
-      <x:Arguments>
-        <views:ViewC/>
-      </x:Arguments>
     </views:MyNavigationPage>
   </TabbedPage.Children>
 </TabbedPage>
