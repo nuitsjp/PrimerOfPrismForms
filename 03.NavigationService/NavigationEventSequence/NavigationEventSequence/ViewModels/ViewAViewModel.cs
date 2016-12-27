@@ -9,57 +9,48 @@ using Prism.Navigation;
 
 namespace NavigationEventSequence.ViewModels
 {
-    public class ViewCViewModel : BindableBase, INavigationAware, IConfirmNavigation, IConfirmNavigationAsync, IDestructible
+    public class ViewAViewModel : BindableBase, INavigationAware, IConfirmNavigation, IConfirmNavigationAsync, IDestructible
     {
         private readonly INavigationService _navigationService;
 
         public DelegateCommand<string> NavigationCommand => new DelegateCommand<string>(page => _navigationService.NavigateAsync(page));
-        public DelegateCommand<string> GoBackCommand => new DelegateCommand<string>(page => _navigationService.GoBackAsync()).ObservesCanExecute(x => CanGoBack);
 
-        private bool _canGoBack;
-
-        public bool CanGoBack
+        public ViewAViewModel(INavigationService navigationService)
         {
-            get { return _canGoBack; }
-            set { SetProperty(ref _canGoBack, value); }
-        }
-
-        public ViewCViewModel(INavigationService navigationService)
-        {
-            Debug.WriteLine("ViewCViewModel#Constructor()");
+            Debug.WriteLine("ViewAViewModel#Constructor()");
             _navigationService = navigationService;
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            Debug.WriteLine("ViewCViewModel#OnNavigatedFrom()");
+            Debug.WriteLine("ViewAViewModel#OnNavigatedFrom()");
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            Debug.WriteLine("ViewCViewModel#OnNavigatedTo()");
+            Debug.WriteLine("ViewAViewModel#OnNavigatedTo()");
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            Debug.WriteLine("ViewCViewModel#OnNavigatingTo()");
+            Debug.WriteLine("ViewAViewModel#OnNavigatingTo()");
         }
 
         public Task<bool> CanNavigateAsync(NavigationParameters parameters)
         {
-            Debug.WriteLine("ViewCViewModel#CanNavigateAsync()");
+            Debug.WriteLine("ViewAViewModel#CanNavigateAsync()");
             return Task.FromResult(true);
         }
 
         public bool CanNavigate(NavigationParameters parameters)
         {
-            Debug.WriteLine("ViewCViewModel#CanNavigate()");
+            Debug.WriteLine("ViewAViewModel#CanNavigate()");
             return true;
         }
 
         public void Destroy()
         {
-            Debug.WriteLine("ViewCViewModel#Destroy()");
+            Debug.WriteLine("ViewAViewModel#Destroy()");
         }
     }
 }

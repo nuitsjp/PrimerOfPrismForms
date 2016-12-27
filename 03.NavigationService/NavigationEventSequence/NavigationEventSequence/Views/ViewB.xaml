@@ -3,14 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="NavigationEventSequence.Views.ViewC"
-             Title="View C">
+             x:Class="NavigationEventSequence.Views.ViewB"
+             Title="View B">
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="View C"/>
-    <Button Text="Navigation ViewB" Command="{Binding NavigationCommand}" CommandParameter="ViewB"/>
+    <Label Text="View B"/>
+    <Button Text="Navigation ViewC" Command="{Binding NavigationCommand}" CommandParameter="ViewC"/>
     <Button Text="Go Back" Command="{Binding GoBackCommand}"/>
-    <Button Text="Navigation /MyNavigationPage/ViewA" Command="{Binding NavigationCommand}" CommandParameter="/MyNavigationPage/ViewA"/>
-    <Switch IsToggled="{Binding CanGoBack}"/>
   </StackLayout>
-
 </ContentPage>

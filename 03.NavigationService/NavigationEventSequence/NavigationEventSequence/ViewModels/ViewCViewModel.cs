@@ -16,7 +16,7 @@ namespace NavigationEventSequence.ViewModels
         public DelegateCommand<string> NavigationCommand => new DelegateCommand<string>(page => _navigationService.NavigateAsync(page));
         public DelegateCommand<string> GoBackCommand => new DelegateCommand<string>(page => _navigationService.GoBackAsync()).ObservesCanExecute(x => CanGoBack);
 
-        private bool _canGoBack;
+        private bool _canGoBack = true;
 
         public bool CanGoBack
         {

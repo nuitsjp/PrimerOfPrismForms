@@ -7,10 +7,8 @@
              Title="View C">
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
     <Label Text="View C"/>
-    <Button Text="Navigation ViewB" Command="{Binding NavigationCommand}" CommandParameter="ViewB"/>
     <Button Text="Go Back" Command="{Binding GoBackCommand}"/>
     <Button Text="Navigation /MyNavigationPage/ViewA" Command="{Binding NavigationCommand}" CommandParameter="/MyNavigationPage/ViewA"/>
     <Switch IsToggled="{Binding CanGoBack}"/>
   </StackLayout>
-
 </ContentPage>
