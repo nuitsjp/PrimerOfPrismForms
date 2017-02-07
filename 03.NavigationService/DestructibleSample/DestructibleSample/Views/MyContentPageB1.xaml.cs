@@ -2,9 +2,9 @@
 
 namespace DestructibleSample.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class MyContentPageB1 : ContentPage
     {
-        public MainPage()
+        public MyContentPageB1()
         {
             InitializeComponent();
         }

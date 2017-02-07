@@ -11,12 +11,17 @@ namespace DestructibleSample
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms");
+            NavigationService.NavigateAsync("MyNavigationPageA/MyContentPageA1/MyContentPageA2");
         }
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<MyNavigationPageA>();
+            Container.RegisterTypeForNavigation<MyNavigationPageB>();
+            Container.RegisterTypeForNavigation<MyContentPageA1>();
+            Container.RegisterTypeForNavigation<MyContentPageA2>();
+            Container.RegisterTypeForNavigation<MyContentPageB1>();
+            Container.RegisterTypeForNavigation<MyContentPageB2>();
         }
     }
 }
