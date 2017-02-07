@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="UriExample.Views.MainPage"
+             Title="MainPage">
+  <StackLayout HorizontalOptions="Fill" VerticalOptions="Center" Padding="10">
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Text："/>
+      <Label Text="{Binding UriText}"/>
+    </StackLayout>
+    <Button Text="Generate to System.Uri object" Command="{Binding GenerateUriCommand}"/>
+    <Label Text="{Binding Message}"/>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Uri.ToString()："/>
+      <Label Text="{Binding UriToString}"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Uri.OriginalString："/>
+      <Label Text="{Binding Uri.OriginalString}"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Uri.IsAbsoluteUri："/>
+      <Label Text="{Binding Uri.IsAbsoluteUri}" TextColor="Red"/>
+    </StackLayout>
+  </StackLayout>
+</ContentPage>
