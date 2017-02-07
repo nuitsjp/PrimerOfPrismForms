@@ -2,9 +2,9 @@
 
 namespace DestructibleWithAbsoluteNavigate.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class MyNavigationPageA : NavigationPage
     {
-        public MainPage()
+        public MyNavigationPageA()
         {
             InitializeComponent();
         }
