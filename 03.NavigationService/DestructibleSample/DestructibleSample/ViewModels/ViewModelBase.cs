@@ -9,7 +9,7 @@ using Prism.Navigation;
 
 namespace DestructibleSample.ViewModels
 {
-    public class ViewModelBase : BindableBase, INavigationAware, IDestructible
+    public class ViewModelBase : BindableBase, INavigationAware
     {
         private static readonly IDictionary<string, NavigationCounter> NavigationCounters = new Dictionary<string, NavigationCounter>();
 
