@@ -10,7 +10,7 @@ namespace DestructibleSample.ViewModels
 {
     public class MyNavigationPageAViewModel : ViewModelBase
     {
-        public MyNavigationPageAViewModel() : base("Navigation A")
+        public MyNavigationPageAViewModel() : base("NavPage A")
         {
 
         }
