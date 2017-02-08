@@ -8,31 +8,11 @@ using Prism.Navigation;
 
 namespace DestructibleSample.ViewModels
 {
-    public class MyNavigationPageAViewModel : BindableBase, INavigationAware, IDestructible
+    public class MyNavigationPageAViewModel : ViewModelBase
     {
-        public MyNavigationPageAViewModel()
+        public MyNavigationPageAViewModel() : base("Navigation A")
         {
 
-        }
-
-        public void OnNavigatedFrom(NavigationParameters parameters)
-        {
-            Debug.WriteLine($"{GetType().Name}#OnNavigatedFrom");
-        }
-
-        public void OnNavigatedTo(NavigationParameters parameters)
-        {
-            Debug.WriteLine($"{GetType().Name}#OnNavigatedTo");
-        }
-
-        public void OnNavigatingTo(NavigationParameters parameters)
-        {
-            Debug.WriteLine($"{GetType().Name}#OnNavigatingTo");
-        }
-
-        public void Destroy()
-        {
-            Debug.WriteLine($"{GetType().Name}#Destroy");
         }
     }
 }

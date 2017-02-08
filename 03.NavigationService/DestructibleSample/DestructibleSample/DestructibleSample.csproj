@@ -42,6 +42,7 @@
     <Compile Include="ViewModels\MyContentPageB2ViewModel.cs" />
     <Compile Include="ViewModels\MyNavigationPageAViewModel.cs" />
     <Compile Include="ViewModels\MyNavigationPageBViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\MyContentPageA1.xaml.cs">
       <DependentUpon>MyContentPageA1.xaml</DependentUpon>
     </Compile>

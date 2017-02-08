@@ -8,35 +8,14 @@ using Prism.Navigation;
 
 namespace DestructibleSample.ViewModels
 {
-    public class MyContentPageB1ViewModel : BindableBase, INavigatedAware, IDestructible
+    public class MyContentPageB1ViewModel : ViewModelBase
     {
         private INavigationService NavigationService { get; }
 
         public DelegateCommand NavigateToPageB2Command => new DelegateCommand(() => NavigationService.NavigateAsync("MyContentPageB2"));
-        public MyContentPageB1ViewModel(INavigationService navigationService)
+        public MyContentPageB1ViewModel(INavigationService navigationService) : base("Page B1")
         {
             NavigationService = navigationService;
         }
-
-        public void OnNavigatedFrom(NavigationParameters parameters)
-        {
-            Debug.WriteLine($"{GetType().Name}#OnNavigatedFrom");
-        }
-
-        public void OnNavigatedTo(NavigationParameters parameters)
-        {
-            Debug.WriteLine($"{GetType().Name}#OnNavigatedTo");
-        }
-
-        public void OnNavigatingTo(NavigationParameters parameters)
-        {
-            Debug.WriteLine($"{GetType().Name}#OnNavigatingTo");
-        }
-
-        public void Destroy()
-        {
-            Debug.WriteLine($"{GetType().Name}#Destroy");
-        }
-
     }
 }
