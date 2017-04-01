@@ -16,6 +16,11 @@ namespace PageDialogBehavior.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
+        public DelegateCommand UpdateTitleCommand => new DelegateCommand(() =>
+        {
+            Title = "Updated Title.";
+        });
+
         public MainPageViewModel()
         {
 

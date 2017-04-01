@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.12
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageDialogBehavior", "PageDialogBehavior\PageDialogBehavior\PageDialogBehavior.csproj", "{29BDF62A-498B-4358-9D61-76DC20B389B2}"
 EndProject
@@ -235,6 +235,8 @@ Global
 		{B0453F70-A3B3-4B81-B70B-6C96D13C3360}.Debug|ARM.Deploy.0 = Debug|ARM
 		{B0453F70-A3B3-4B81-B70B-6C96D13C3360}.Debug|iPhone.ActiveCfg = Debug|x86
 		{B0453F70-A3B3-4B81-B70B-6C96D13C3360}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
+		{B0453F70-A3B3-4B81-B70B-6C96D13C3360}.Debug|iPhoneSimulator.Build.0 = Debug|x86
+		{B0453F70-A3B3-4B81-B70B-6C96D13C3360}.Debug|iPhoneSimulator.Deploy.0 = Debug|x86
 		{B0453F70-A3B3-4B81-B70B-6C96D13C3360}.Debug|x64.ActiveCfg = Debug|x64
 		{B0453F70-A3B3-4B81-B70B-6C96D13C3360}.Debug|x64.Build.0 = Debug|x64
 		{B0453F70-A3B3-4B81-B70B-6C96D13C3360}.Debug|x64.Deploy.0 = Debug|x64

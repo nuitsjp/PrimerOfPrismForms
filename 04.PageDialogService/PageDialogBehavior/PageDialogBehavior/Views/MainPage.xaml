@@ -13,8 +13,10 @@
                 <behavior:DisplayAlertBehavior 
                     EventName="Clicked"
                     Title="Title"
-                    Message="Hello, Behavior"
-                    Cancel="Cancel"/>
+                    Message="Hello, DisplayAlertBehavior."
+                    Accept="Ok"
+                    Cancel="Cancel"
+                    Command="{Binding UpdateTitleCommand}"/>
             </Button.Behaviors>
         </Button>
     </StackLayout>
