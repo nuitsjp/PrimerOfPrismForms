@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:behavior="clr-namespace:PageDialogBehavior.Views.Behaviors;assembly=PageDialogBehavior"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PageDialogBehavior.Views.MainPage"
+             Title="MainPage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Title}" />
+        <Button Text="Click!">
+            <Button.Behaviors>
+                <behavior:DisplayAlertBehavior 
+                    EventName="Clicked"
+                    Title="Title"
+                    Message="Hello, Behavior"
+                    Cancel="Cancel"/>
+            </Button.Behaviors>
+        </Button>
+    </StackLayout>
+</ContentPage>
