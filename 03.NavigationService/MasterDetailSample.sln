@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterDetailSample", "MasterDetailSample\MasterDetailSample\MasterDetailSample.csproj", "{A2CEA04F-AFA6-4293-AF33-5607ED6226AF}"
 EndProject
@@ -228,6 +228,8 @@ Global
 		{F6C37964-B46B-47C5-95EF-39C79A1E8F65}.AppStore|x86.Build.0 = Release|x86
 		{F6C37964-B46B-47C5-95EF-39C79A1E8F65}.AppStore|x86.Deploy.0 = Release|x86
 		{F6C37964-B46B-47C5-95EF-39C79A1E8F65}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F6C37964-B46B-47C5-95EF-39C79A1E8F65}.Debug|Any CPU.Build.0 = Debug|x86
+		{F6C37964-B46B-47C5-95EF-39C79A1E8F65}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{F6C37964-B46B-47C5-95EF-39C79A1E8F65}.Debug|ARM.ActiveCfg = Debug|ARM
 		{F6C37964-B46B-47C5-95EF-39C79A1E8F65}.Debug|ARM.Build.0 = Debug|ARM
 		{F6C37964-B46B-47C5-95EF-39C79A1E8F65}.Debug|ARM.Deploy.0 = Debug|ARM
