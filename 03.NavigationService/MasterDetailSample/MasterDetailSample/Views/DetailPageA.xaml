@@ -3,10 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="MasterDetailSample.Views.DetailA1Page"
-             Title="Detail A-1">
-  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="Detail A-1"/>
-    <Button Text="Navigation Next" Command="{Binding NavigationNextCommand}"/>
-  </StackLayout>
+             x:Class="MasterDetailSample.Views.DetailPageA"
+             Title="DetailPageA">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Button Text="DetailPageC" Command="{Binding NavigateCommand}" CommandParameter="DetailPageC" />
+    </StackLayout>
 </ContentPage>

@@ -1,16 +1,15 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
-using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Input;
+using Prism.Navigation;
 
 namespace MasterDetailSample.ViewModels
 {
-    public class MainPageViewModel : ViewModelBase
+    public class DetailPageAViewModel : ViewModelBase
     {
-        public MainPageViewModel(INavigationService navigationService)
+        public DetailPageAViewModel(INavigationService navigationService)
             : base(navigationService)
         {
         }

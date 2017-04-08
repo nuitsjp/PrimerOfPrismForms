@@ -2,9 +2,9 @@
 
 namespace MasterDetailSample.Views
 {
-    public partial class DetailA2Page : ContentPage
+    public partial class DetailPageA : ContentPage
     {
-        public DetailA2Page()
+        public DetailPageA()
         {
             InitializeComponent();
         }

@@ -12,15 +12,16 @@ namespace MasterDetailSample
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MainPage", useModalNavigation:true);
+            NavigationService.NavigateAsync("MainPage/NavigationPage/DetailPageA");
         }
 
         protected override void RegisterTypes()
         {
             Container.RegisterTypeForNavigation<MainPage>();
             Container.RegisterTypeForNavigation<NavigationPage>();
-            Container.RegisterTypeForNavigation<DetailA1Page>();
-            Container.RegisterTypeForNavigation<DetailA2Page>();
+            Container.RegisterTypeForNavigation<DetailPageA>();
+            Container.RegisterTypeForNavigation<DetailPageB>();
+            Container.RegisterTypeForNavigation<DetailPageC>();
         }
     }
 }

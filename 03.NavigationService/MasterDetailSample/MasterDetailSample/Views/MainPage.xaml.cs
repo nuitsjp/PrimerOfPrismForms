@@ -5,7 +5,10 @@ namespace MasterDetailSample.Views
 {
     public partial class MainPage : MasterDetailPage, IMasterDetailPageOptions
     {
-        public bool IsPresentedAfterNavigation => true;
+        public bool IsPresentedAfterNavigation
+        {
+            get { return Device.Idiom != TargetIdiom.Phone; }
+        }
         public MainPage()
         {
             InitializeComponent();

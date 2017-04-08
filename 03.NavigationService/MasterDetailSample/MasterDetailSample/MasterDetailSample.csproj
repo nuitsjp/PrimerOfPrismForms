@@ -36,14 +36,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\DetailA1PageViewModel.cs" />
-    <Compile Include="ViewModels\DetailA2PageViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="ViewModels\DetailPageAViewModel.cs" />
+    <Compile Include="ViewModels\DetailPageBViewModel.cs" />
+    <Compile Include="ViewModels\DetailPageCViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
-    <Compile Include="Views\DetailA1Page.xaml.cs">
-      <DependentUpon>DetailA1Page.xaml</DependentUpon>
+    <Compile Include="Views\DetailPageA.xaml.cs">
+      <DependentUpon>DetailPageA.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\DetailA2Page.xaml.cs">
-      <DependentUpon>DetailA2Page.xaml</DependentUpon>
+    <Compile Include="Views\DetailPageB.xaml.cs">
+      <DependentUpon>DetailPageB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetailPageC.xaml.cs">
+      <DependentUpon>DetailPageC.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -67,15 +72,6 @@
       <HintPath>..\..\packages\Unity.4.0.1\lib\portable-net45+wp80+win8+wpa81+MonoAndroid10+MonoTouch10\Microsoft.Practices.Unity.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Prism, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Prism.Core.6.3.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.dll</HintPath>
-    </Reference>
-    <Reference Include="Prism.Forms, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Prism.Forms.6.3.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="Prism.Unity.Forms, Version=6.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Prism.Unity.Forms.6.3.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Prism.Unity.Forms.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.224\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
@@ -96,13 +92,33 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\DetailA1Page.xaml">
+    <ProjectReference Include="..\..\..\..\Prism\Source\Prism\Prism.csproj">
+      <Project>{e6c50355-d01e-4caa-884d-d7929861315c}</Project>
+      <Name>Prism</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Prism\Source\Xamarin\Prism.Forms\Prism.Forms.csproj">
+      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
+      <Name>Prism.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Prism\Source\Xamarin\Prism.Unity.Forms\Prism.Unity.Forms.csproj">
+      <Project>{79ebb8f1-5d80-4ea1-9100-ebdc1ec51cb7}</Project>
+      <Name>Prism.Unity.Forms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DetailPageA.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\DetailA2Page.xaml">
+    <EmbeddedResource Include="Views\DetailPageB.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DetailPageC.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

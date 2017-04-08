@@ -46,5 +46,9 @@ namespace TabbedPageNavigation.ViewModels
             if (parameters.ContainsKey("title"))
                 Title = (string)parameters["title"] + " and Prism";
         }
+
+        public void OnNavigatingTo(NavigationParameters parameters)
+        {
+        }
     }
 }

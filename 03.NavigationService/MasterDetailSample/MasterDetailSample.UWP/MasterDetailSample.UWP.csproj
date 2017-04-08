@@ -128,6 +128,18 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Prism\Source\Prism\Prism.csproj">
+      <Project>{e6c50355-d01e-4caa-884d-d7929861315c}</Project>
+      <Name>Prism</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Prism\Source\Xamarin\Prism.Forms\Prism.Forms.csproj">
+      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
+      <Name>Prism.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Prism\Source\Xamarin\Prism.Unity.Forms\Prism.Unity.Forms.csproj">
+      <Project>{79ebb8f1-5d80-4ea1-9100-ebdc1ec51cb7}</Project>
+      <Name>Prism.Unity.Forms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MasterDetailSample\MasterDetailSample.csproj">
       <Name>MasterDetailSample</Name>
     </ProjectReference>
