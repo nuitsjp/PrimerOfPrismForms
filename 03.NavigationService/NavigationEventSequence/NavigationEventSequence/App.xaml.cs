@@ -11,18 +11,22 @@ namespace NavigationEventSequence
         protected override void OnInitialized()
         {
             InitializeComponent();
-
-            NavigationService.NavigateAsync("MyNavigationPage/ViewA");
-            //NavigationService.NavigateAsync("MyNavigationPage/ViewA/ViewB");
-            //NavigationService.NavigateAsync("MyTabbedPage/MyNavigationPage/ViewC");
+            NavigationService.NavigateAsync("MenuPage");
         }
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<ViewA>();
-            Container.RegisterTypeForNavigation<ViewB>();
-            Container.RegisterTypeForNavigation<ViewC>();
-            Container.RegisterTypeForNavigation<MyNavigationPage>();
+            Container.RegisterTypeForNavigation<MenuPage>();
+            Container.RegisterTypeForNavigation<PrismMasterDetailPage>();
+            Container.RegisterTypeForNavigation<PrismNavigationPageA>();
+            Container.RegisterTypeForNavigation<PrismContentPageA1>();
+            Container.RegisterTypeForNavigation<PrismNavigationPageB>();
+            Container.RegisterTypeForNavigation<PrismContentPageB1>();
+            Container.RegisterTypeForNavigation<PrismContentPageA2>();
+            Container.RegisterTypeForNavigation<PrismTabbedPage>();
+            Container.RegisterTypeForNavigation<PrismContentPageB2>();
+            Container.RegisterTypeForNavigation<PrismContentPageB3>();
+            Container.RegisterTypeForNavigation<PrismContentPageA3>();
         }
     }
 }

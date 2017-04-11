@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="NavigationEventSequence.Views.PrismContentPageA1"
+             Title="PrismContentPageA1">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="PrismContentPageA1"/>
+        <Button Text="PrismContentPageA2" Command="{Binding NavigationCommand}" CommandParameter="PrismContentPageA2"/>
+        <Button Text="MenuPage" Command="{Binding NavigationCommand}" CommandParameter="/MenuPage"/>
+        <Button Text="GoBack" Command="{Binding GoBackCommand}"/>
+    </StackLayout>
+</ContentPage>
