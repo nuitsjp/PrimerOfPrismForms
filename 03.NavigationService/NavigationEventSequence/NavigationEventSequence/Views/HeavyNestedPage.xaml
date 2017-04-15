@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="NavigationEventSequence.Views.HeavyNestedPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Master">
+            <StackLayout HorizontalOptions="Start">
+                <Button Text="PrismContentPageA1" Command="{Binding NavigationCommand}" CommandParameter="PrismNavigationPageA/PrismContentPageA1"/>
+                <Button Text="PrismContentPageB1" Command="{Binding NavigationCommand}" CommandParameter="PrismNavigationPageB/PrismContentPageB1"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

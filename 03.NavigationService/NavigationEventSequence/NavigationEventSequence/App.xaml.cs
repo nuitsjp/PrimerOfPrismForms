@@ -27,6 +27,7 @@ namespace NavigationEventSequence
             Container.RegisterTypeForNavigation<PrismContentPageB2>();
             Container.RegisterTypeForNavigation<PrismContentPageB3>();
             Container.RegisterTypeForNavigation<PrismContentPageA3>();
+            Container.RegisterTypeForNavigation<HeavyNestedPage>();
         }
     }
 }

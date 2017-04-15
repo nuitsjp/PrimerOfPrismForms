@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\HeavyNestedPageViewModel.cs" />
     <Compile Include="ViewModels\MenuPageViewModel.cs" />
     <Compile Include="ViewModels\PrismContentPageA1ViewModel.cs" />
     <Compile Include="ViewModels\PrismContentPageA2ViewModel.cs" />
@@ -48,6 +49,9 @@
     <Compile Include="ViewModels\PrismNavigationPageBViewModel.cs" />
     <Compile Include="ViewModels\PrismTabbedPageViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\HeavyNestedPage.xaml.cs">
+      <DependentUpon>HeavyNestedPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
@@ -191,6 +195,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\PrismContentPageA3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\HeavyNestedPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -8,5 +8,7 @@
         <Button Text="MasterDetailPage" Command="{Binding NavigationCommand}" CommandParameter="PrismMasterDetailPage/PrismNavigationPageA/PrismContentPageA1"/>
         <Button Text="TabbedPage" Command="{Binding NavigationCommand}" CommandParameter="PrismTabbedPage"/>
         <Button Text="TabbedPage DeepLink" Command="{Binding NavigationCommand}" CommandParameter="PrismTabbedPage/PrismNavigationPageB/PrismContentPageB1/PrismContentPageB2"/>
+        <Button Text="HeavyNestedPage" Command="{Binding NavigationCommand}" CommandParameter="HeavyNestedPage/PrismTabbedPage"/>
+        <Button Text="HeavyNestedPage DeepLink" Command="{Binding NavigationCommand}" CommandParameter="HeavyNestedPage/PrismTabbedPage/PrismNavigationPageB/PrismContentPageB1/PrismContentPageB2/PrismContentPageB3"/>
     </StackLayout>
 </ContentPage>
