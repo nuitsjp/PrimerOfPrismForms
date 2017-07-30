@@ -4,6 +4,7 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="TabbedPageNavigation.Views.PrismContentPage2"
+             Title="PrismContentPage2"
              NavigationPage.HasNavigationBar="True">
   <StackLayout Orientation="Vertical"
            VerticalOptions="Center"
